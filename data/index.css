@@ -1,0 +1,181 @@
+
+
+#reason{
+    font-size: 1em;
+}
+.body {
+    font-family: 'Kiwi Maru', serif;
+  }
+
+  .resizeimage {
+    max-width: 800px; /* 最大幅 */
+    min-width: 240px; /* 最小幅 */
+ }
+ .resizeimage img { width: 100%; }
+
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+      max-width: 800px;
+      height: 500px;
+    }
+    
+    .slideshow-item {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .slideshow-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+   
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      font-weight: bold;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+    
+    .dots-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: gray;
+      cursor: pointer;
+    }
+    
+    .dot.active {
+      background-color: white;
+    }
+    
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+}
+
+    
+
+#footer02 {
+  background: #222;
+}
+
+.ie #footer02 .logo img,
+#footer02 .logo {
+  display: inline-block;
+  width: 120px;
+}
+
+#footer02 .nav li a {
+  padding: 15px;
+  color: #ccc;
+}
+
+#footer02 .c-btn {
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 641px) {
+  #footer02 .logo {
+    padding: 10px 0;
+  }
+
+  #footer02 .wrap {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer02 .cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #footer02 .nav {
+    display: inline-block;
+  }
+
+  #footer02 .nav li {
+    display: inline-block;
+  }
+
+  #footer02 .nav li a:hover {
+    color: #ca353b;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 0px) { 
+  .sp1 {
+    display: none;
+  }
+  .sm1 {
+    display: inline;
+}
+
+@media screen and (min-width: 600px) { 
+  .sm1 {
+    display: none;
+  }
+  .sp1 {
+    display: inline;
+  }
+}

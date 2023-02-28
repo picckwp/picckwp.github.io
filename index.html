@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+
+<head>
+<meta charset="UTF-8">
+<title>2022年度ワープロ部送別会写真集</title>
+
+
+<link rel="stylesheet" type="text/css" href="./data/index.css">
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript" id="slideshow">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+<script id="omedetou">
+    $(document).ready(function() {
+      $(".view_timer").each(function(index, target) {
+        var startDate = $(this).attr("data-start-date");
+        var endDate = $(this).attr("data-end-date");
+        var nowDate = new Date();
+    
+        if (startDate) {
+          startDate = new Date(startDate);
+        } else {
+          startDate = nowDate;
+        }
+        if (endDate) {
+          endDate = new Date(endDate);
+        }
+    
+        if (startDate <= nowDate && (!endDate || nowDate <= endDate)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+    </script>
+
+
+</head>
+
+
+<body class="body">
+
+
+  <div class="pagetop">↑</div>
+
+    <h3 class="tops" style="text-align: center;">2022年度ワープロ部送別会写真</h3>
+    <p id="reason" style="text-align: center;">３年生のみなさん、ありがとうございました！<br>送別会で撮った写真をまとめました。</p>
+    <span class="view_timer" data-start-date="2023/3/4 0:00" style="text-align: center;">3年生の皆さんご卒業おめでとうございます！</span>
+
+
+    <div style="text-align: right;">
+    <p style="font-size: 1.0em;">※画像をタップするとフルサイズの画像が表示されます。<br>一枚一枚ダウンロードする際はフルサイズ画像を表示させてから<br>長押しして保存してください。</p>
+    <a href="./data/2022soubetukaipic.zip" style="font-size: small;">一括ダウンロードはこちらから(zip形式)</a>
+</div>
+<div class="sm1">
+    <div class="slider">
+        <img src="./pic/slideshow/spic1.png" width="500" height="300" alt="">
+        <img src="./pic/slideshow/spic2.png" width="500" height="300" alt="">
+        <img src="./pic/slideshow/spic4.png" width="500" height="300" alt="">
+        <img src="./pic/slideshow/spic3.png" width="500" height="300" alt="">
+        <img src="./pic/slideshow/spic5.png" width="500" height="300" alt="">
+        <img src="./pic/slideshow/spic6.png" width="500" height="300" alt="">
+
+        </div>
+      </div>
+      <div class="sp1">
+        <div class="slider">
+          <img src="./pic/slideshow/spic1.png" width="1280" height="1080" alt="">
+          <img src="./pic/slideshow/spic2.png" width="1280" height="1080" alt="">
+          <img src="./pic/slideshow/spic4.png" width="1280" height="1080" alt="">
+          <img src="./pic/slideshow/spic3.png" width="1280" height="1080" alt="">
+          <img src="./pic/slideshow/spic5.png" width="1280" height="1080" alt="">
+          <img src="./pic/slideshow/spic6.png" width="1280" height="1080" alt="">
+  
+          </div>
+        </div>
+
+    <div id="pic">
+        <element class="resizeimage">
+        <div class="picture">
+            <a href="./pic/tops/pic_39.png"><img src="./pic/tops/pic_39.png"></a>
+            <a href="./pic/tops/pic_40.png"><img src="./pic/tops/pic_40.png"></a>
+            <a href="./pic/tops/pic_46.png"><img src="./pic/tops/pic_46.png"></a>
+            <a href="./pic/tops/pic_47.png"><img src="./pic/tops/pic_47.png"></a>
+            <a href="./pic/tops/pic_48.png"><img src="./pic/tops/pic_48.png"></a>
+
+            <a href="./pic/bucyo/pic1.png"><img src="./pic/bucyo/pic1.png"></a>
+            <a href="./pic/bucyo/pic2.png"><img src="./pic/bucyo/pic2.png"></a>
+            <a href="./pic/bucyo/pic3.png"><img src="./pic/bucyo/pic3.png"></a>
+            <a href="./pic/bucyo/pic4.png"><img src="./pic/bucyo/pic4.png"></a>
+            <a href="./pic/bucyo/pic5.png"><img src="./pic/bucyo/pic5.png"></a>
+
+            <a href="./pic/1g/pic1.png"><img src="./pic/1g/pic1.png"></a>
+            <a href="./pic/1g/pic2.png"><img src="./pic/1g/pic2.png"></a>
+            <a href="./pic/1g/pic3.png"><img src="./pic/1g/pic3.png"></a>
+            <a href="./pic/1g/pic4.png"><img src="./pic/1g/pic4.png"></a>
+            <a href="./pic/1g/pic5.png"><img src="./pic/1g/pic5.png"></a>
+            <a href="./pic/1g/pic6.png"><img src="./pic/1g/pic6.png"></a>
+            <a href="./pic/1g/pic7.png"><img src="./pic/1g/pic7.png"></a>
+            <a href="./pic/1g/pic8.png"><img src="./pic/1g/pic8.png"></a>
+            <a href="./pic/1g/pic9.png"><img src="./pic/1g/pic9.png"></a>
+            <a href="./pic/1g/pic10.png"><img src="./pic/1g/pic10.png"></a>
+            <a href="./pic/1g/pic11.png"><img src="./pic/1g/pic11.png"></a>
+            <a href="./pic/1g/pic12.png"><img src="./pic/1g/pic12.png"></a>
+            <a href="./pic/1g/pic13.png"><img src="./pic/1g/pic13.png"></a>
+            <a href="./pic/1g/pic14.png"><img src="./pic/1g/pic14.png"></a>
+            <a href="./pic/1g/pic15.png"><img src="./pic/1g/pic15.png"></a>
+            <a href="./pic/1g/pic9.png"><img src="./pic/1g/pic9.png"></a>
+            <a href="./pic/1g/pic10.png"><img src="./pic/1g/pic10.png"></a>
+            <a href="./pic/1g/pic11.png"><img src="./pic/1g/pic11.png"></a>
+            <a href="./pic/1g/pic12.png"><img src="./pic/1g/pic12.png"></a>
+            <a href="./pic/1g/pic13.png"><img src="./pic/1g/pic13.png"></a>
+            <a href="./pic/1g/pic14.png"><img src="./pic/1g/pic14.png"></a>
+            <a href="./pic/1g/pic15.png"><img src="./pic/1g/pic15.png"></a>
+            <a href="./pic/1g/pic16.png"><img src="./pic/1g/pic16.png"></a>
+            <a href="./pic/1g/pic17.png"><img src="./pic/1g/pic17.png"></a>
+            <a href="./pic/1g/pic18.png"><img src="./pic/1g/pic18.png"></a>
+            <a href="./pic/1g/pic19.png"><img src="./pic/1g/pic19.png"></a>
+            <a href="./pic/1g/pic20.png"><img src="./pic/1g/pic20.png"></a>
+            <a href="./pic/1g/pic21.png"><img src="./pic/1g/pic21.png"></a>
+            <a href="./pic/1g/pic22.png"><img src="./pic/1g/pic22.png"></a>
+
+            <a href="./pic/komon/pic1.png"><img src="./pic/komon/pic1.png"></a>
+            <a href="./pic/komon/pic2.png"><img src="./pic/komon/pic2.png"></a>
+            <a href="./pic/komon/pic3.png"><img src="./pic/komon/pic3.png"></a>
+            <a href="./pic/komon/pic4.png"><img src="./pic/komon/pic4.png"></a>
+            <a href="./pic/komon/pic5.png"><img src="./pic/komon/pic5.png"></a>
+            <a href="./pic/komon/pic6.png"><img src="./pic/komon/pic6.png"></a>
+            <a href="./pic/komon/pic7.png"><img src="./pic/komon/pic7.png"></a>
+
+            <a href="./pic/present/pic1.png"><img src="./pic/present/pic1.png"></a>
+            <a href="./pic/present/pic2.png"><img src="./pic/present/pic2.png"></a>
+            <a href="./pic/present/pic3.png"><img src="./pic/present/pic3.png"></a>
+            <a href="./pic/present/pic4.png"><img src="./pic/present/pic4.png"></a>
+            <a href="./pic/present/pic5.png"><img src="./pic/present/pic5.png"></a>
+            <a href="./pic/present/pic6.png"><img src="./pic/present/pic6.png"></a>
+            <a href="./pic/present/pic7.png"><img src="./pic/present/pic7.png"></a>
+            <a href="./pic/present/pic8.png"><img src="./pic/present/pic8.png"></a>
+            <a href="./pic/present/pic9.png"><img src="./pic/present/pic9.png"></a>
+            <a href="./pic/present/pic10.png"><img src="./pic/present/pic10.png"></a>
+
+            <a href="./pic/3g/pic1.png"><img src="./pic/3g/pic1.png"></a>
+            <a href="./pic/3g/pic2.png"><img src="./pic/3g/pic2.png"></a>
+            <a href="./pic/3g/pic3.png"><img src="./pic/3g/pic3.png"></a>
+            <a href="./pic/3g/pic4.png"><img src="./pic/3g/pic4.png"></a>
+            <a href="./pic/3g/pic5.png"><img src="./pic/3g/pic5.png"></a>
+            <a href="./pic/3g/pic6.png"><img src="./pic/3g/pic6.png"></a>
+            <a href="./pic/3g/pic7.png"><img src="./pic/3g/pic7.png"></a>
+            <a href="./pic/3g/pic8.png"><img src="./pic/3g/pic8.png"></a>
+            <a href="./pic/3g/pic9.png"><img src="./pic/3g/pic9.png"></a>
+
+            <a href="./pic/owari/pic.png"><img src="./pic/owari/pic.png"></a>
+            <a href="./pic/owari/pic1.png"><img src="./pic/owari/pic1.png"></a>
+            <a href="./pic/owari/pic2.png"><img src="./pic/owari/pic2.png"></a>
+
+
+            <a href="./pic/pken/pic1.png"><img src="./pic/pken/pic1.png"></a>
+            <a href="./pic/pken/pic2.png"><img src="./pic/pken/pic2.png"></a>
+            <a href="./pic/pken/pic3.png"><img src="./pic/pken/pic3.png"></a>
+            <a href="./pic/pken/pic4.png"><img src="./pic/pken/pic4.png"></a>
+            <a href="./pic/pken/pic5.png"><img src="./pic/pken/pic5.png"></a>
+           
+
+            <a href="./pic/pic_1.png"><img src="./pic/pic_1.png"></a>
+            <a href="./pic/pic_2.png"><img src="./pic/pic_2.png"></a>
+            <a href="./pic/pic_3.png"><img src="./pic/pic_3.png"></a>
+
+        </div>
+        </element>
+    </div>
+
+    
+<footer id="footer02" class="outer-block">
+  <div class="inner-block">
+    <div class="wrap">
+      <div class="logo" style="text-align: center;">
+        <a href="https://www.ck-wp.club/"><img src="data/cklogo.png" alt="homepage" width="224" height="30"></a>
+      </div>
+      <div class="cont">
+      </div>
+    </div>
+  </div><!-- /inner-block -->
+  <div class="copyright" style="color: white;text-align: center;">
+    COPYRIGHT © Chibakeizai Univ Highschool<br><a href="https://www.ck-wp.club/"><P>Word Processor Club.</P></a> All rights Reserved.
+
+<br>
+<br>
+<br>
+
+  </div>
+</footer>
+
+
+</body>
