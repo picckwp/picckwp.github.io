@@ -101,7 +101,11 @@
 	text-decoration: none;
 }
 
-    
+.logomain {
+   text-align: center;
+   padding-right: 44px;
+
+}
 
 #footer02 {
   background: #222;
@@ -159,11 +163,7 @@
   }
 }
 
-.logomain {
-   text-align: center;
-   padding-right: 44px;
 
-}
 
 a{
   color:deepskyblue;
