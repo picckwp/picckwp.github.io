@@ -186,4 +186,10 @@ a{
   .sp1 {
     display: inline;
   }
+	
+.logomain {
+    text-align: center;
+    display: block;
+  margin: auto;
+  }
 }
