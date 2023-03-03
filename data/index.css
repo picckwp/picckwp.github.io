@@ -163,8 +163,12 @@
 .downh {
    text-align: center;
    color: #000000;
-
 }
+
+.righto {
+   text-align: right;
+}
+	
 #footer02 {
   background: #222;
 }
