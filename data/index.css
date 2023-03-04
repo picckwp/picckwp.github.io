@@ -320,6 +320,7 @@ a{
   }
   .sm1 {
     display: inline;
+	  z-index: 0;
 }
 
 @media screen and (min-width: 600px) { 
@@ -328,6 +329,7 @@ a{
   }
   .sp1 {
     display: inline;
+	  z-index: 0;
   }
 	
 .logomain {
