@@ -78,6 +78,7 @@
 
 html {
   width: 100%;
+	overflow: hidden;
 {
 .sakura {
   position: absolute;
