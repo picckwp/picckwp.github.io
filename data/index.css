@@ -75,7 +75,10 @@
     .dot.active {
       background-color: white;
     }
-  
+
+html {
+  width: 100%;
+{
 .sakura {
   position: absolute;
   padding: 0;
