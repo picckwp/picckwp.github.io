@@ -75,53 +75,140 @@
     .dot.active {
       background-color: white;
     }
-    /* 桜を表示するコンテナのスタイル */
-.cherry-blossom-container {
-  position: relative;
-  height: 100vh; /* コンテナの高さ */
-  width: 100%; /* コンテナの横幅 */
-  overflow: hidden; /* コンテナからはみ出した要素を隠す */
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
+
+html {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#00bfff, #fff);
 }
 
-/* 桜の花びらのスタイル */
-.petal {
+.sakura {
   position: absolute;
-  background-color: #ffc0cb; /* 花びらの色 */
-  border-radius: 150% 0 150% 0;
-  animation: animate-petal 10s linear;
-}
-
-.petal::after {
-  content: "";
-  position: absolute;
-  top: -14%;
-  left: -10%;
-  display: block;
+  padding: 0;
+  margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffc0cb;
-  border-radius: 150% 0 150% 0;
-  transform: rotate(15deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 花びらが降るアニメーション */
-@keyframes animate-petal {
-  0% {
-    top: 0;
-    opacity: 0;
-    transform: rotate(0deg);
+.sakura h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.sakura li{
+  position: absolute;
+  list-style: none;
+  top: -50px;
+  background: #ffdbed;
+  border-radius: 0% 70%;  
+  animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes fall {
+  to {
+    top: 120%;
   }
-  10% {
-    opacity: 1;
+}
+
+@keyframes sway1 {
+  from {
+    transform: translateX(0px) rotate(0deg);
   }
-  90% {
-    opacity: 1;
+  to {
+    transform: translateX(200px) rotate(-45deg);
   }
-  100% {
-    opacity: 0;
-    top: 100vh;
-    transform: rotate(3000deg);
+}
+
+@keyframes sway2 {
+  from {
+    transform: translateX(200px) rotate(-45deg);
   }
+  to {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.sakura li:nth-child(1){
+  left: 0%;
+  width: 24px;
+  height: 15px;
+  animation: fall 10s linear infinite,
+             sway1 3s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+.sakura li:nth-child(2){
+  left: 5%;
+  width: 13px;
+  height: 9px;
+  animation: fall 15s linear infinite,
+             sway1 2s ease-in-out infinite alternate;
+  animation-delay: 8s;
+}
+
+.sakura li:nth-child(3){
+  left: 15%;
+  width: 16px;
+  height: 10px;
+  animation: fall 9s linear infinite,
+             sway1 3.5s ease-in-out infinite alternate;
+  animation-delay: 13s;
+}
+
+.sakura li:nth-child(4){
+  left: 30%;
+  width: 16px;
+  height: 10px;
+  animation: fall 8s linear infinite,
+             sway2 4s ease-in-out infinite alternate;
+  animation-delay: 7s;
+}
+.sakura li:nth-child(5){
+  left: 40%;
+  width: 16px;
+  height: 10px;
+  animation: fall 10s linear infinite,
+             sway1 4s ease-in-out infinite alternate;
+  animation-delay: 0s;
+}
+.sakura li:nth-child(6){
+  left: 55%;
+  width: 24px;
+  height: 15px;
+  animation: fall 11s linear infinite,
+             sway2 3s ease-in-out infinite alternate;
+  animation-delay: 3s;
+}
+.sakura li:nth-child(7){
+  left: 65%;
+  width: 16px;
+  height: 10px;
+  animation: fall 7s linear infinite,
+             sway2 3.5s ease-in-out infinite alternate;
+  animation-delay: 7s;
+}
+.sakura li:nth-child(8){
+  left: 50%;
+  width: 13px;
+  height: 9px;
+  animation: fall 7s linear infinite,
+             sway1 3s ease-in-out infinite alternate;
+  animation-delay: 3s;
+}
+.sakura li:nth-child(9){
+  left: 80%;
+  width: 16px;
+  height: 10px;
+  animation: fall 10s linear infinite,
+             sway2 4s ease-in-out infinite alternate;
+  animation-delay: 4s;
 }
 
 /* 上に戻るボタン */
